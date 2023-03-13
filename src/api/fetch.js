@@ -1,5 +1,5 @@
 // Shows
-
+const URL = process.env.REACT_APP_BASE_URL;
 // Create
 export function createShow(show) {
   return;
@@ -12,12 +12,13 @@ export function destroyShow(id) {
 
 // Index/Get all
 export function getAllShows() {
+  fetch("http://localhost5001/api/shows");
   return;
 }
 
 // Show/Get one
 export function getOneShow(id) {
-  return;
+  fetch();
 }
 
 // Update
