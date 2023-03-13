@@ -9,7 +9,7 @@ function Movie() {
   const [loadingError, setLoadingError] = useState(false);
   const navigate = useNavigate();
 
-  const { id } = useParams(); // gives us access to the params we set in our paths in our routing
+  const { id } = useParams();
 
   useEffect(() => {
     getOneMovie(id)
